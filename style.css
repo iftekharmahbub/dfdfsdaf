@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+
+body a{
+    text-decoration: none;
+}
+.full_body{
+    height: 100vh;
+}
+.dark_theme{
+    background-color: #000;
+    color: #fff;
+}
+.random_clr{
+    background-color: #2C3E50;
+    color: #fff;
+}
+.light_theme{
+    background-color: #fff;
+    color: #000;
+}
+nav .navigation{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 15px 0;
+}
+.user{
+    font-size: 21px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+}
+nav .theme{
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+}
+nav .theme span{
+    display: block;
+}
+.night_theme{
+    transition: 0.4s;
+}
+.night_theme.dark_mode{
+    margin-top: -40px;
+}
+
+aside{
+    background-color: rgba(0 , 0, 0, 0.8);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.7s;
+}
+.main.active{
+    transform: translateX(0);
+}
+aside .menu{
+    width: 50%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+}
+aside .menu-bar{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+aside .menu-bar li a{
+    display: inline-block;
+    padding: 15px 0;
+}
+aside .menu-bar li{
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+aside .menu-bar li:hover{
+    background-color: aquamarine;
+}
+aside .close{
+    display: inline-block;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
